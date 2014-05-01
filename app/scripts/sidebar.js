@@ -20,9 +20,11 @@
         e.preventDefault();
         if ( objMain.hasClass('use-sidebar') ){
             hideSidebar();
+
         }
         else {
             showSidebar();
+            
         }
     }).css('height', objSeparator.parent().outerHeight() + 'px');
  
