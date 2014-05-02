@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/utility.css">
         <link rel="stylesheet" src="bower_components/sidr/stylesheets/jquery.sidr.dark.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
         <!-- endbuild -->
@@ -23,152 +24,55 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-<!--         <div id="sidr-nav" style="display: none;">
-  <ul>
-    <li onclick="javascript: toggleNav();">Stuff</li>
-    <br/>Things
-    <br/>--More things</div>
-<div id="dContent" class="Content" runat="server">
-    <div id="navTab" class="sbhint" onclick="javascript: toggleNav();">MENU</div>
-        jnlervkekr;
-</div> -->
 
 
 <div id="sidr-nav" style="display: none;">
-    <div class="row">
-        <div class="col-sm-6 padding-left0 padding-right0">
-            <div class="sidr-box">
-                Computer Programming
-            </div>
-        </div>
-        <div class="col-sm-6 padding-left0 padding-right0">
-            <div class="sidr-box">
-                Intro to Js: Drawing & Animation
-            </div>
-        </div>
-    </div>
+    <div class="col-sm-4">
+        <div class="st-menu st-effect-1" id="menu-1">
+            <h2 class="icon icon-lab">Playlist Title</h2>          
+            <div id="list">
+                <div class="item">
+                    <a class="icon icon-location" href="#"><i class="fa fa-play-circle-o fa-2x"></i> <span>  Basic regrouping when subtracting three digit numbers</span></a>
+                </div>
+                <div class="item"><a class="icon icon-location" href="#"><i class="fa fa-play-circle-o fa-2x"></i>  Regrouping when subtracting three digit numbers</a></div>
+                <div class="item"><a class="icon icon-study" href="#"><i class="fa fa-play-circle-o fa-2x"></i>  Regrouping twice when subtracting three digit numbers</a></div>
+                <div class="item"><a class="icon icon-photo" href="#"><i class="fa fa-play-circle-o fa-2x"></i>  Regrouping from 0 when subtracting three digit numbers</a></div>
+                <div class="item"><a class="icon icon-photo" href="#"><i class="fa fa-pencil-square-o"></i>  MASTERY</a></div>
 
-    <div class='item'>INTRO TO PROGRAMMING</div>
-    <div class='item-data'>
-        <div class="row btm">
-            <div class="col-sm-2">
-                <div class="icon"></div>
-            </div>
-            <div class="col-sm-10">
-                <a href="#" class="font11 green">What is Programming?</a>
+                
+                <div class="item"><a class="icon icon-wallet" href="#">NEXT PLAYLIST</a></div>
             </div>
         </div>
-        <div class="row btm">
-            <div class="col-sm-2">
-                <div class="icon"></div>
-            </div>
-            <div class="col-sm-10">
-                <p class="font11 green">A Tour of Programming on Khan Academy</p>
-            </div>
-        </div>        
     </div>
-    <div class='item'>INTRO TO PROGRAMMING</div>
-     <div class='item-data'>
-        <div class="row btm">
-            <div class="col-sm-2">
-                <div class="icon"></div>
-            </div>
-            <div class="col-sm-10">
-                <a href="#" class="font11 green">What is Programming?</a>
-            </div>
-        </div>
-        <div class="row btm">
-            <div class="col-sm-2">
-                <div class="icon"></div>
-            </div>
-            <div class="col-sm-10">
-                <p class="font11 green">A Tour of Programming on Khan Academy</p>
-            </div>
-        </div>        
-    </div>
-    <div class='item'>INTRO TO PROGRAMMING</div>
-    <div class='item-data'>
-        <div class="row btm">
-            <div class="col-sm-2">
-                <div class="icon"></div>
-            </div>
-            <div class="col-sm-10">
-                <a href="#" class="font11 green">What is Programming?</a>
-            </div>
-        </div>
-        <div class="row btm">
-            <div class="col-sm-2">
-                <div class="icon"></div>
-            </div>
-            <div class="col-sm-10">
-                <p class="font11 green">A Tour of Programming on Khan Academy</p>
-            </div>
-        </div>        
-    </div>
-    <div class='item'>INTRO TO PROGRAMMING</div>
-    <div class='item-data'>
-        <div class="row btm">
-            <div class="col-sm-2">
-                <div class="icon"></div>
-            </div>
-            <div class="col-sm-10">
-                <a href="#" class="font11 green">What is Programming?</a>
-            </div>
-        </div>
-        <div class="row btm">
-            <div class="col-sm-2">
-                <div class="icon"></div>
-            </div>
-            <div class="col-sm-10">
-                <p class="font11 green">A Tour of Programming on Khan Academy</p>
-            </div>
-        </div>        
-    </div>        
-
-            <div class="tutorial-nav-next-right">
-                <span>Next section:</span><br>
-                <span>Drawing basics</span>
-            </div>
-   
-
 </div>
-<div id="dContent" class="Content" runat="server">
+<div id="dContent" class="hidden-xs" runat="server">
     <div id="navTab" class="sbhint" onclick="javascript: toggleNav();">PLAYLIST</div>
     <!-- Content Stuff -->
 </div>
 
+
 <div class="use-sidebar sidebar-at-left" id="main">
-
-    <div id="content">
-
-        <nav class="playlist-title-box">          
-            <div class="row">
-                <div class="col-sm-3">
-                    <h1 class="text-left task-title"> <b>What is Programming?</b></h1>
-                </div>
-                <div class="col-sm-5"></div>
-                <div class="col-sm-2">
-                    <h1 class="text-right task-title">Current Points</h1>
-                </div>
-                <div class="col-sm-2 margin-top25">
-                    <progress id="progressbar" value="0" max="100"></progress> 
-                </div>
-            </div>  
-        </nav>
-
-    </div>
-        <div class="container">
+<div id="dContent" class="visible-xs" runat="server">
+    <div id="navTab" class="sbhint-mobile" onclick="javascript: toggleNav();">PLAYLIST</div>
+    <!-- Content Stuff -->
+</div>
+    <div class="container">
+        <div class="col-sm-12 col-xs-12 text-center">
             <div class="vendor"><iframe src="//www.youtube.com/embed/eIndU6kmH58" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
         </div>
-
-
-
-
     </div>
+    <div class="container">
+        <div class="row margin-top20">
+            <div class="col-sm-6">
+                Video Title
+            </div>            
+        </div>        
+    </div>
+</div>
 
 
     <div class="clearer">&nbsp;</div>
-</div>
+
 
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
