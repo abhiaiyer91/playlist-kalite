@@ -1,22 +1,11 @@
-(function () {
-
-var PlaylistContent = Backbone.Model.extend({
-    initialize: function () {
-        console.log('Good to go');
-    },
-    defaults: {
-        title: 'Intro to Programming',
-        status: 'Half'
-    }    
-
+$(".meter > span").each(function() {
+	$(this)
+		.data("origWidth", $(this).width())
+		.width(0)
+		.animate({
+			width: $(this).data("origWidth")
+		}, 1200);
 });
-
-var PlayList = new PlaylistContent();
-
-console.log(PlayList);
-
-})();
-
 
 
 
