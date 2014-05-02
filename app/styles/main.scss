@@ -305,6 +305,34 @@ background-image:url('/images/status.png'); /*your location of the image may dif
   -webkit-font-smoothing: antialiased;  
 }
 
+nav {
+  background: #333;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease;
+}
+
+nav.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+progress {  
+    background-color: #f3f3f3;  
+    border: 0;  
+    height: 18px;  
+    border-radius: 9px;  
+}  
+
+progress {  
+    background-color: #f3f3f3;  
+    border: 0;  
+    height: 18px;  
+    border-radius: 9px;  
+}  
+
+
  /* VIDEO STYLE */
 .vendor {
 position: relative;

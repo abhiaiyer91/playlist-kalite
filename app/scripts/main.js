@@ -1,15 +1,21 @@
-$(".meter > span").each(function() {
-	$(this)
-		.data("origWidth", $(this).width())
-		.width(0)
-		.animate({
-			width: $(this).data("origWidth")
-		}, 1200);
+ 
+
+
+(function () {
+
+
+var timer;
+
+$(window).on('mousemove', function () {
+  $('nav').addClass('show');
+  try {
+    clearTimeout(timer);
+  } catch (e) {}
+  timer = setTimeout(function () {
+    $('nav').removeClass('show');
+  }, 1500);
 });
 
-
-
-$(document).ready(function(e){
     $('.item').click(function (e){
         if($(this).next('.item-data').css('display') != 'block'){
             $('.active').slideUp('fast').removeClass('active');
@@ -18,4 +24,8 @@ $(document).ready(function(e){
             $('.active').slideUp('fast').removeClass('active');
         }
     });
-});
+
+})()
+
+
+
