@@ -1,4 +1,35 @@
+  .item
+    {
+        display : block;
+        width : inherit ;
+        height : auto;
+        padding: 5px;
+        line-height : 40px;
+        background : #555 ;
+        border: 1px solid #000 ;
+        cursor: pointer;
+        color: #fff;
+    }
+ 
+    .item-data
+    {
+        display : none ; 
+        height : auto ;
+        border: 1px solid #ccc;
 
+    }
+ 
+    .active {
+        background : #eee ;
+        color : #000 ;
+    }
+    .item-data{
+        margin: 2px;
+    }
+    .btm {
+    border-bottom: 1px solid #333;
+    padding:5px;
+    }
 /*FONT*/
 
 .italic {font-style: italic;}

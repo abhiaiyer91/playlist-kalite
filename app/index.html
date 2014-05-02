@@ -48,14 +48,58 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-sm-2">
-            <div class="icon"></div>
+    <div class='item'>Intro to programming</div>
+    <div class='item-data'>
+        <div class="row btm">
+            <div class="col-sm-2">
+                <div class="icon"></div>
+            </div>
+            <div class="col-sm-10">
+                <a href="#" class="font11 green">What is Programming?</a>
+            </div>
         </div>
-        <div class="col-sm-10">
-            hello world
+        <div class="row btm">
+            <div class="col-sm-2">
+                <div class="icon"></div>
+            </div>
+            <div class="col-sm-10">
+                <p class="font11 green">A Tour of Programming on Khan Academy</p>
+            </div>
+        </div>        
+    </div>
+ 
+    <div class='item'>Item 2</div>
+    <div class='item-data'>
+        <div>
+            This is the content for Accordion 2
         </div>
     </div>
+ 
+    <div class='item'>Item 3</div>
+    <div class='item-data' >
+        <div>
+            This is the content for Accordion 3
+        </div>
+    </div>
+ 
+    <div class='item'>Item 4</div>
+    <div class='item-data' >
+        <div>
+            This is the content for Accordion 4
+        </div>
+    </div>
+
+    <div class="tutorial-nav-node">
+            <a href="#" class="tab-link clearfix">
+            <div class="tutorial-nav-next-left">
+                <span class="icon-chevron-right"></span>
+            </div>
+            <div class="tutorial-nav-next-right">
+                <span>Next section:</span><br>
+                <span>Drawing basics</span>
+            </div>
+            </a>
+        </div>
 
 </div>
 <div id="dContent" class="Content" runat="server">
@@ -69,6 +113,7 @@
 
     <div id="content">
         <div class="container">
+
             <div class="row">
                 <div class="col-sm-6">
                     <h1 class="text-left"> Video Title </h1>
@@ -127,6 +172,7 @@
         <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/main.js -->
+         <script src="http://washmatique.fr/blog/resources/common/backbone-view-states-0.3.0.js"></script>
         <script src="scripts/classes.js"></script>
         <script src="scripts/main.js"></script>
          <script src="scripts/sidebar.js"></script>
