@@ -9,6 +9,8 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/utility.css">
+        <link rel="stylesheet" src="bower_components/sidr/stylesheets/jquery.sidr.dark.css">
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
         <!-- endbuild -->
@@ -21,55 +23,48 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+<!--         <div id="sidr-nav" style="display: none;">
+  <ul>
+    <li onclick="javascript: toggleNav();">Stuff</li>
+    <br/>Things
+    <br/>--More things</div>
+<div id="dContent" class="Content" runat="server">
+    <div id="navTab" class="sbhint" onclick="javascript: toggleNav();">MENU</div>
+        jnlervkekr;
+</div> -->
+
+
+<div id="sidr-nav" style="display: none;">
+    <div class="row">
+        <div class="col-sm-6 padding-left0 padding-right0">
+            <div class="sidr-box">
+                Computer Programming
+            </div>
+        </div>
+        <div class="col-sm-6 padding-left0 padding-right0">
+            <div class="sidr-box">
+                Intro to Js: Drawing & Animation
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-2">
+            <div class="icon"></div>
+        </div>
+        <div class="col-sm-10">
+            hello world
+        </div>
+    </div>
+
+</div>
+<div id="dContent" class="Content" runat="server">
+    <div id="navTab" class="sbhint" onclick="javascript: toggleNav();">MENU</div>
+    <!-- Content Stuff -->
+</div>
+
 <div class="use-sidebar sidebar-at-left" id="main">
 
-    <div id="sidebar" class="col-sm-3">
-
-        <div class="row">
-            <div class="col-sm-6">
-                Playlist
-            </div>
-            <div class="col-sm-6">
-                Subject
-            </div>            
-        </div>
-
-        <div class="row">
-            <h1>Intro to programming</h1>
-        </div>
-        <div class="row">
-             <div class="col-sm-2">
-                <div class="icon"></div> 
-            </div>  
-            <div class="col-sm-10">
-                What is Programming?
-            </div>        
-        </div>
-        <div class="row">
-             <div class="col-sm-2">
-                <div class="icon"></div> 
-            </div>  
-            <div class="col-sm-10">
-                What is Programming?
-            </div>        
-        </div>
-        <div class="row">
-             <div class="col-sm-2">
-                <div class="icon"></div> 
-            </div>  
-            <div class="col-sm-10">
-                What is Programming?
-            </div>        
-        </div>        
-
-        <div class="row">
-            <div class="col-sm-12">
-                Next Section:
-            </div>        
-        </div> 
-
-
-    </div>
 
 
     <div id="content">
@@ -85,7 +80,7 @@
                 
             </div>
 
-            
+
 <div class="vendor"><iframe src="//www.youtube.com/embed/rvD-Q6Q8ZfE" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
         </div>
 
@@ -94,13 +89,7 @@
 
     </div>
 
-   <a href="#" id="separator">
-        <div class="icon"></div><br>
-        <div class="icon"></div><br>
-        <div class="icon"></div><br>
-        <div class="icon"></div><br>
-        <div class="icon"></div>
-    </a>
+
     <div class="clearer">&nbsp;</div>
 </div>
 
@@ -119,6 +108,7 @@
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/underscore/underscore.js"></script>
         <script src="bower_components/backbone/backbone.js"></script>
+        <script src="bower_components/sidr/jquery.sidr.min.js"></script>
         <!-- endbuild -->
 
         <!-- build:js scripts/plugins.js -->
